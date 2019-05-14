@@ -39,5 +39,5 @@ install(TARGETS joystick_test libjoystick libjoystick-static
         RUNTIME DESTINATION bin
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib/static
-        PUBLIC_HEADER DESTINATION include/
+        PUBLIC_HEADER DESTINATION include/joystick
 )
