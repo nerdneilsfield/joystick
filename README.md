@@ -11,7 +11,7 @@ A minimal C++ object-oriented API onto joystick devices under Linux.
 
 ```
 mkdir build && cd build
-cmake .. -DB
+cmake .. 
 make 
 sudo make install
 ```
