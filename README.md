@@ -2,7 +2,31 @@
 
 A minimal C++ object-oriented API onto joystick devices under Linux.
 
-# usage
+## changes
+
+- Move to Cmake build system
+- Add install options
+
+## install
+
+```
+mkdir build && cd build
+cmake .. -DB
+make 
+sudo make install
+```
+
+If you do not want to install library to `/usr`, you may use follow command:
+
+```
+mkdir build && cd build
+cmake .. -DCMAKE_INSTALL_PREFIX="Path-you-want-to-install"
+make 
+make install 
+```
+
+
+## usage
 
 Create an instance of `Joystick`:
 
@@ -30,7 +54,7 @@ if (joystick.sample(&event))
 }
 ```
 
-# example
+## example
 
 You might run this in a loop:
 
@@ -65,7 +89,7 @@ This produces something similar to:
     Axis 2 is at position 9796
     Axis 3 is at position -13850
 
-# options
+## options
 
 You can specify the particular joystick by id:
 
